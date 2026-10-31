@@ -13,7 +13,7 @@
 
 <p align="center"><sub>A real question from Claude and the replies offered under it. This mod draws only the Lazy answer list.</sub></p>
 
-Most replies are a few words. After each turn, a fast model reads what Claude said and offers two or three answers as buttons. A press only fills the prompt box, so a wrong tap can never approve anything.
+Most replies are a few words. After each turn, a fast model reads what Claude said and offers two or three answers as buttons. A press only fills the prompt box, and you still press Enter to send it.
 
 ## Install
 
@@ -37,7 +37,7 @@ In the desktop app, click + next to the prompt box, then Plugins, Add marketplac
 ## What it does
 
 - **Based on what Claude just said:** Answers to its question, or the next step it named. Nothing when it is not waiting on you.
-- **Never sends:** A press puts the reply in the prompt box, after anything you already typed. You still press Enter.
+- **You still send it:** A press puts the reply in the prompt box, after anything you already typed. You still press Enter.
 - **Stays quiet:** Hidden while Claude works, and cleared by your next message. No calls for subagents, failed turns or AFK runs.
 - **In your language:** Replies follow the language of your last message.
 
@@ -71,9 +71,13 @@ claude plugin test .
 claude --plugin-dir .
 ```
 
+## Make it yours
+
+Once it is loaded, ask your own Claude to fit it to how you work, for example to change the tone of the replies, or how many it offers. The code is in `hooks/register.tsx`, and the license allows changes. Keep your version in a fork, so an update does not replace it. What you change is yours to check.
+
 ## Credits
 
-- The "untrusted reply" prompt pattern follows [reflect-mod](https://github.com/BayramAnnakov/claude-reflect) by Bayram Annakov (MIT).
+- The "untrusted reply" prompt pattern and small helpers (finding the last reply, pulling JSON out of a model answer) follow [reflect-mod](https://github.com/BayramAnnakov/claude-reflect) by Bayram Annakov (MIT).
 
 ## Try other mods together
 
@@ -84,3 +88,7 @@ This mod works on its own, and it also works side by side with my other Claude C
 [MIT](LICENSE). `THIRD_PARTY_LICENSES.md` covers the parts that came from other projects.
 
 Provided **as is, with no warranty of any kind**. You use it at your own risk, and the author is not liable for anything that results from using it, including lost work, usage charges or changes to your code.
+
+**It may break.** It relies on how Claude Code works today, and has been tested on version 2.1.292. It may stop working after a future update if Anthropic changes things.
+
+This is an independent, unofficial project. It is not affiliated with, endorsed by or supported by Anthropic.
