@@ -8,9 +8,9 @@
   <img alt="tests: 13 passing" src="https://img.shields.io/badge/tests-13%20passing-2ea44f?style=flat-square">
 </p>
 
-<p align="center"><img src="docs/usage.svg" alt="Suggested replies under a real Claude question" width="860"></p>
+<p align="center"><img src="docs/usage.svg" alt="lazy-reply alone, under a real Claude question" width="860"></p>
 
-<p align="center"><sub>A real terminal session: three replies offered under a question from Claude.</sub></p>
+<p align="center"><sub>A real question from Claude and the replies offered under it. This mod draws only the Lazy answer list.</sub></p>
 
 Most replies are a few words. After each turn, a fast model reads what Claude said and offers two or three answers as buttons. A press only fills the prompt box, so a wrong tap can never approve anything.
 
