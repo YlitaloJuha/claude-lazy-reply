@@ -61,7 +61,7 @@ No network, no shell commands and no file access through the mod API. The end of
 
 - Some suggestions will miss. They are a guess from the last reply alone.
 - Claude Code's own suggested reply can show in the prompt box at the same time.
-- A press has only been tested in the test kit, not live.
+- Replies and `/lazy off` have been tested in real sessions. A press on a reply has only been checked in tests.
 
 ## Develop
 
