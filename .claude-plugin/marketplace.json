@@ -1,0 +1,14 @@
+{
+  "name": "claude-lazy-reply",
+  "owner": {
+    "name": "Juha Ylitalo",
+    "url": "https://github.com/YlitaloJuha"
+  },
+  "plugins": [
+    {
+      "name": "lazy-reply",
+      "source": "./",
+      "description": "Answer Claude with one tap: a fast model offers the replies you were about to type."
+    }
+  ]
+}
