@@ -1,5 +1,6 @@
 {
   "name": "claude-lazy-reply",
+  "description": "Answer Claude with one tap: a fast model offers the replies you were about to type.",
   "owner": {
     "name": "Juha Ylitalo",
     "url": "https://github.com/YlitaloJuha"
